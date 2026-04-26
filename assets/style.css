@@ -1,0 +1,100 @@
+/* Global Background & Font */
+.stApp {
+    background: radial-gradient(circle at center, #06201a 0%, #020617 100%);
+    font-family: 'Inter', "Segoe UI", sans-serif;
+    color: #ffffff;
+}
+
+/* Glassmorphism Containers */
+.glass-card, .status-card, .video-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(74, 222, 128, 0.15);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Home Page Typography */
+.home-title {
+    font-size: clamp(50px, 7vw, 90px);
+    font-weight: 900;
+    color: #4ade80;
+    line-height: 1;
+    letter-spacing: -3px;
+    text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+}
+
+/* Interactive Popover Buttons as Cards */
+div[data-testid="stPopover"] > button {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(74, 222, 128, 0.2) !important;
+    border-radius: 20px !important;
+    height: 120px !important;
+    width: 100% !important;
+    transition: all 0.3s ease !important;
+    color: #4ade80 !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stPopover"] > button:hover {
+    border-color: #4ade80 !important;
+    background: rgba(74, 222, 128, 0.1) !important;
+    transform: translateY(-5px);
+}
+
+/* System Console Metrics */
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(74, 222, 128, 0.1);
+}
+
+.status-label { color: #4ade80; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+.status-value { font-family: 'monospace'; font-size: 1rem; color: #fff; }
+
+/* Main Button */
+.stButton > button {
+    background: #22c55e !important;
+    color: #000 !important;
+    border-radius: 50px !important;
+    padding: 12px 60px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4) !important;
+}
+/* Styling the Help Popover Button */
+div[data-testid="stPopover"] > button[key="help_btn"] {
+    background: transparent !important;
+    border: 1px solid #4ade80 !important;
+    color: #4ade80 !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+}
+
+/* Help Table inside Popover */
+.help-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 0.9rem;
+}
+.help-table th {
+    text-align: left;
+    color: #4ade80;
+    border-bottom: 1px solid rgba(74, 222, 128, 0.3);
+    padding: 10px;
+}
+.help-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
